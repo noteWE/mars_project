@@ -3,29 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
     <title>Mars Project</title>
 </head>
 <body>
-    <main>
-        <div>
-            <div>
-                <p>Выберите марсоход</p>
-                <select name="" id="">
-                    <option value="">оппортьюнити</option>
-                    <option value="">кьюриосити</option>
-                    <option value="">персеверанс</option>
+    <header id="header">Mars Project</header>
+    <main id="main">
+        <form id="input-form">
+            <div id="form-block">
+                <p id="form-label">Выберите марсоход</p>
+                <select name="rover-selector" id="rover-selector">
+                    <option value="">не выбран</option>
+                    <option value="opportunity">оппортьюнити</option>
+                    <option value="curiosity">кьюриосити</option>
+                    <option value="perseverance">персеверанс</option>
                 </select>
             </div>
             
-            <div>
-                <p>Введите сол</p>
-                <input type="text">
+            <div id="form-row">
+                <p id="form-label">Введите сол</p>
+                <input type="text" id="sol-input">
             </div>
 
-            <button id="button_load">Загрузить</button>
-        </div>
-        <div>
-            <img id="img_src" alt="Фото с марса">
+            <button id="button_load">ЗАГРУЗИТЬ</button>
+        </form>
+        <div id="photos_container">
+            <h2 id="photos_container-header">Фото с марса.</h2>
+            <div id="photos_block"></div>
         </div>
     </main>
     <script src="./index.js"></script>
